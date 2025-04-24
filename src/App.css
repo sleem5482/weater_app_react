@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+/* custom fonts */
+@font-face {
+  font-family: Winky;
+  src: url(/public/Fonts/WinkyRough-SemiBold.ttf);
+}
+@font-face {
+  font-family: playFair;
+  src: url(/public/Fonts/PlayfairDisplay-Black.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: playFair;
+  background: linear-gradient(135deg,rgb(91, 164, 109),rgb(190, 91, 171),rgb(162, 112, 170),rgb(230, 112, 136),rgb(91, 164, 109));
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container{
+  height: 100dvh;
+    display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
+.card{
+  padding: 30px;
+  border-radius: 30px;
+  background: linear-gradient(90deg ,#880e4f,#283593,#e91e63);
+  color:#fff;
+  box-shadow: 2px 5px 3px #ef9a9a;
+  /* border: 1px solid #345; */
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.city{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.status
+{
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+.degree{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.translation{
+  color: white !important;
+  margin: 10px !important;
+  text-transform: capitalize !important;
 }
