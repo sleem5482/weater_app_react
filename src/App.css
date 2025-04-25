@@ -35,7 +35,6 @@ body{
 .status
 {
   display: flex;
-  justify-content: left;
   gap: 20px;
 }
 .degree{
@@ -47,4 +46,10 @@ body{
   color: white !important;
   margin: 10px !important;
   text-transform: capitalize !important;
+}
+.temp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
